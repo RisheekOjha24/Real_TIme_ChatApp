@@ -10,6 +10,7 @@ const localhostKey = import.meta.env.VITE_APP_LOCALHOST_KEY;
 
 
 export default function Login() {
+console.log("loginRoute : ",loginRoute);
   const navigate = useNavigate();
   const [values, setValues] = useState({ username: "", password: "" });
   const toastOptions = {
