@@ -1,5 +1,4 @@
-const backendUrl = import.meta.env.VITE_BACKEND_URL;
-export const host = backendUrl;
+export const host = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 export const loginRoute = `${host}/api/auth/login`;
 export const registerRoute = `${host}/api/auth/register`;
 export const logoutRoute = `${host}/api/auth/logout`;
